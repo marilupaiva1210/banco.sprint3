@@ -1,0 +1,2 @@
+Chaves primárias são valores que se armazenam em uma ou mais
+colunas, indentificando registros de forma única.

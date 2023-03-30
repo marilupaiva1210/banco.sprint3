@@ -1,0 +1,7 @@
+Normalização de dado é uma aplicação de regras nas tabelas do banco de dados, na intenção de diminuir falhas nos projetos.
+
+Forma 1 - Devem ser atômicos, sem campos repetidos ou com mais de um valor. Identifica a chave primária, remove campos duplicados e cria uma relação entre a tabela primária e a secundária;
+
+Forma 2 - Deve estar na forma 1. Atributos não chave da tabela dependem da chave da tabela, não podem depender de uma parte delas. Sendo a chave primária simples, estaremos na forma 2, já se for composta devemos remover a coluna principal e criar uma nova tabela;
+
+Forma 3 - Deve estar na forma 2. Atributos não chave da tabela são independentes e dependentes de uma única chave primária. Um atributo B depende de A, se para cada valor A só existe um valor B. Para chegar até a forma 3, identificamos as colunas que são dependentes de outras colunas não chave e leva-lás para outra tabela.
